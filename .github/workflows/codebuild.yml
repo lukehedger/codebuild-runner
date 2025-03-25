@@ -8,12 +8,11 @@ on:
 
 jobs:
   codebuild:
-    runs-on: codebuild-luketest-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on: codebuild-lambda-${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
       - name: Echo
-        run: echo "codebuild"
-
-        # echo "running on CodeBuild..."
-        # echo "OS: $(uname -a)"
-        # aws sts get-caller-identity
+        run: |
+          echo "running on codebuild lambda"
+          echo "OS: $(uname -a)"
+          aws sts get-caller-identity
