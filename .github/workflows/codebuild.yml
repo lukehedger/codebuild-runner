@@ -12,4 +12,8 @@ jobs:
 
     steps:
       - name: Echo
-        run: echo codebuild
+        run: echo "codebuild"
+
+        # echo "running on CodeBuild..."
+        # echo "OS: $(uname -a)"
+        # aws sts get-caller-identity
