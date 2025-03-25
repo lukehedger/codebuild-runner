@@ -1,0 +1,12 @@
+name: CodeBuild
+
+on:
+  workflow_dispatch:
+
+jobs:
+  codebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo
+        run: echo codebuild
