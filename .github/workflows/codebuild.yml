@@ -8,7 +8,7 @@ on:
 
 jobs:
   codebuild:
-    runs-on: codebuild-personal-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on: codebuild-luketest-${{ github.run_id }}-${{ github.run_attempt }}
 
     steps:
       - name: Echo
